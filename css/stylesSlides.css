@@ -1,0 +1,104 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main .imagenes .imgContenedor3{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 10px 30px;
+	overflow: hidden; 
+} 
+.main .imagenes .imgContenedor3 .rowOne {
+	width: 100%;
+	overflow: hidden;
+}
+.main .imagenes .imgContenedor3 .rowOne .small {width: 440px;} 
+.main .imagenes .imgContenedor3 .rowOne .small img {
+	width: 100%;
+	vertical-align: top;
+}
+.main .imagenes .imgContenedor3 .rowOne .button p {margin: 0 0 0 15px;}
+.main .imagenes .imgContenedor3 .sectores {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	-webkit-align-items: flex-end;
+	align-items: center; 
+	padding: 40px 10px;
+	width: 100%;
+	position: relative;
+}
+.main .imagenes .imgContenedor3 .sectores .sectorUno {
+	height: 320px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between; 
+	-webkit-justify-content: space-between;
+	margin-left: 150px;
+	z-index: 2;
+}
+.main .imagenes .imgContenedor3 .sectores .sectorDos {z-index: 2}
+.main .imagenes .imgContenedor3 .sectores .sectorUno .imagen3 img, 
+.main .imagenes .imgContenedor3 .sectores .sectorDos .imagen3 img {
+	vertical-align: top;
+} 
+.main .imagenes .imgContenedor3 .sectores .oculto {
+	display: none;
+}
+.main .imagenes .imgContenedor3 .sectorTres {
+	background: #ffb718;
+	width: 480px;
+	height: 345px; 
+	overflow: hidden;
+	position: absolute;
+	left: 515px;
+	top: 205px;
+	z-index: 1
+}
+.main .imagenes .imgContenedor3 .sectorTres img {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+@media screen and (max-width: 1000px) {
+	.main .imagenes .imgContenedor3 {padding: 0px;}
+	.main .imagenes .imgContenedor3 .sectores .sectorDos {display: none;}
+	.main .imagenes .imgContenedor3 .sectorTres {display: none;}
+	.main .imagenes .imgContenedor3 .sectores .oculto {
+		display: block;
+		background: #ffb718;
+		height: 345px; 
+		overflow: hidden;
+		z-index: 1
+	}
+	.main .imagenes .imgContenedor3 .sectores {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: flex-end;
+		justify-content: space-between;
+	}
+	.main .imagenes .imgContenedor3 .sectores .sectorUno {		 
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
+} 
+@media screen and (max-width: 500px) {
+	.main .imagenes .imgContenedor3 .sectores .oculto {
+		width: 100%;
+	}
+	.main .imagenes .imgContenedor3 .rowOne .small {width: 100%;} 
+}
